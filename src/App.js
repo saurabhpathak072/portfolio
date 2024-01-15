@@ -7,7 +7,7 @@ function App() {
   return (
     <Container fluid className="App p-0 m-0">
       <Row className=" p-0 m-0">
-        <Col sm={4} lg={3}  className="max-h100vh  p-0 m-0" >
+        <Col sm={3}  lg={4}  className="  p-0 m-0" >
           <header className="max-h100vh  App-header">
             <Sidebar />
           </header>

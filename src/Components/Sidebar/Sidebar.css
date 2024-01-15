@@ -6,24 +6,24 @@
     height: 100vh;
     position: fixed;
     top: 0;
-    left: -200px;
+    /* left: -200px; */
     background-color: #333;
     padding-top: 50px;
     transition: left 0.3s ease;
   }
   
-  /* .sidebar.open {
+  .sidebar.open {
     left: 0;
-  } */
+  }
   
   .toggle-btn {
-    position: absolute;
+    /* position: absolute; */
     top: 10px;
     /* left: 10px; */
     right: 0;
     font-size: 20px;
     background-color: transparent;
-    color: #333;
+    color: white;
     border: none;
     cursor: pointer;
   }
@@ -55,7 +55,7 @@
   }
   
   /* Responsive Design */
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 800px) {
     /* .sidebar {
       width: 100%;
       left: 0;
@@ -73,7 +73,7 @@
         left: 0;
       } */
   }
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 800px) {
    
     .toggle-btn{
         display: none;
