@@ -1,0 +1,85 @@
+/* App.css or Sidebar.css */
+
+/* Common styles for larger screens */
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -200px;
+    background-color: #333;
+    padding-top: 50px;
+    transition: left 0.3s ease;
+  }
+  
+  /* .sidebar.open {
+    left: 0;
+  } */
+  
+  .toggle-btn {
+    position: absolute;
+    top: 10px;
+    /* left: 10px; */
+    right: 0;
+    font-size: 20px;
+    background-color: transparent;
+    color: #333;
+    border: none;
+    cursor: pointer;
+  }
+  
+  nav {
+    padding: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    display: block; /* Ensures the entire link area is clickable */
+    padding: 8px;
+  }
+  
+  a:hover,.active {
+    color: #ffcc00;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 600px) {
+    /* .sidebar {
+      width: 100%;
+      left: 0;
+    }
+  
+    .sidebar.open {
+      left: 100%;
+    } */
+    .sidebar {
+       
+        left: -100%;
+      }
+    
+      /* .sidebar.open {
+        left: 0;
+      } */
+  }
+  @media screen and (min-width: 600px) {
+   
+    .toggle-btn{
+        display: none;
+    }
+    .sidebar.open {
+      left: 0%;
+    }
+  }
+  
