@@ -7,7 +7,7 @@
     position: fixed;
     top: 0;
     /* left: -200px; */
-    background-color: var(--background-color);
+    background-color: var(--header-primary-color);
     padding-top: 50px;
     transition: left 0.3s ease;
     z-index: 1;
@@ -24,7 +24,7 @@
     right: 0;
     font-size: 30px;
     background-color: transparent;
-    color: var(--background-color);
+    color: var(--header-primary-color);
     /* color: white; */
     border: none;
     cursor: pointer;

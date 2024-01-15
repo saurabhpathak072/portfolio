@@ -3,26 +3,32 @@ import useWindowDimensions from "../Hooks/useWindowDimensions";
 
 export const AppContext = createContext({
   isOpen: true,
+  setIsOpen: () => {},
+  isMobile: false,
+  isDesktop:false
 });
 
 const AppContextProvider = ({ children }) => {
-    const {  width } = useWindowDimensions();
+  const { width } = useWindowDimensions();
 
-   
-  const [isOpen, setIsOpen] = useState(width > 575?true:false);
+  const [isOpen, setIsOpen] = useState(width > 575 ? true : false);
+  const [isMobile, setIsMobile] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(false);
   const toggleSidebar = () => {
-    setIsOpen(!isOpen);
+    setIsOpen((open) => {
+      return !open;
+    });
   };
 
   useEffect(() => {
-    const isOpenCondition = width > 575?true:false;
-    setIsOpen(isOpenCondition);
-  
+    const isDesktop = width > 575 ? true : false;
+    setIsOpen(isDesktop);
+    setIsDesktop(isDesktop);
+    setIsMobile(!isDesktop);
+  }, [width]);
 
-  }, [width])
-  
   return (
-    <AppContext.Provider value={{ isOpen, toggleSidebar }}>
+    <AppContext.Provider value={{ isOpen,isMobile,isDesktop, toggleSidebar, setIsOpen }}>
       {children}
     </AppContext.Provider>
   );
