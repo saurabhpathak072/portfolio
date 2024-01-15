@@ -7,7 +7,7 @@
     position: fixed;
     top: 0;
     /* left: -200px; */
-    background-color: #333;
+    background-color: var(--background-color);
     padding-top: 50px;
     transition: left 0.3s ease;
   }
@@ -23,6 +23,7 @@
     right: 0;
     font-size: 20px;
     background-color: transparent;
+    /* color: var(--background-color); */
     color: white;
     border: none;
     cursor: pointer;
@@ -55,7 +56,7 @@
   }
   
   /* Responsive Design */
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 575px) {
     /* .sidebar {
       width: 100%;
       left: 0;
@@ -66,14 +67,14 @@
     } */
     .sidebar {
        
-        left: -100%;
+        left: -100% ;
       }
     
-      /* .sidebar.open {
+      .sidebar.open {
         left: 0;
-      } */
+      }
   }
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 575px) {
    
     .toggle-btn{
         display: none;

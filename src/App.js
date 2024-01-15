@@ -6,14 +6,14 @@ import { Element } from "react-scroll";
 function App() {
   return (
     <Container fluid className="App p-0 m-0">
-      <Row className=" p-0 m-0">
-        <Col sm={3}  lg={4}  className="  p-0 m-0" >
+      {/* <Row className=" p-0 m-0"> */}
+        {/* <Col sm={3}  lg={4}  className="  p-0 m-0" > */}
           <header className="max-h100vh  App-header">
             <Sidebar />
           </header>
-        </Col>
-        <Col className=" p-0 m-0">
-          <main>
+        {/* </Col> */}
+        {/* <Col className=" p-0 m-0"> */}
+          <main className="mainContainer">
             <Element id="home" name="section1" className="section">
               Home
             </Element>
@@ -27,8 +27,8 @@ function App() {
               Section 4
             </Element>
           </main>
-        </Col>
-      </Row>
+        {/* </Col> */}
+      {/* </Row> */}
       {/* <Row>
         <footer>Footer</footer>
       </Row> */}

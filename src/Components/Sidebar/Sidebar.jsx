@@ -37,11 +37,9 @@ const Sidebar = () => {
   };
 
     const scrollToSection = (sectionId) => {
-        console.log('====================================');
-        console.log(sectionId);
-        console.log('====================================');
+       
       scroller.scrollTo(sectionId, {
-        duration: 800,
+        duration: 1000,
         delay: 0,
         smooth: 'easeInOutQuart',
       });
@@ -55,7 +53,7 @@ const Sidebar = () => {
         ☰
       </button>
     </div>
-      <div className={`sidebar ${isOpen ? "open" : ""}`}>
+      <div className={`sidebar panel ${isOpen ? "open" : ""}`}>
         <nav>
           <ul>
             <li>
