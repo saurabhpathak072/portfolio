@@ -21,7 +21,7 @@
   position: fixed;
     display: block;
     width: 100%;
-    background: var(--background-color);
+    /* background: var(--background-color); */
     display: flex;
     justify-content: flex-end;
     color: white;

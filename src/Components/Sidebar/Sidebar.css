@@ -10,6 +10,7 @@
     background-color: var(--background-color);
     padding-top: 50px;
     transition: left 0.3s ease;
+    z-index: 1;
   }
   
   .sidebar.open {
@@ -18,13 +19,13 @@
   
   .toggle-btn {
     /* position: absolute; */
-    top: 10px;
+    top: 5px;
     /* left: 10px; */
     right: 0;
-    font-size: 20px;
+    font-size: 30px;
     background-color: transparent;
-    /* color: var(--background-color); */
-    color: white;
+    color: var(--background-color);
+    /* color: white; */
     border: none;
     cursor: pointer;
   }

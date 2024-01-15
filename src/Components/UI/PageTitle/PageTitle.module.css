@@ -1,0 +1,7 @@
+.pageTitle{
+    display: block;
+}
+.hr{
+    color: var(--hightlight-color);
+    z-index: 0;
+}

@@ -1,6 +1,7 @@
 :root{
   --hightlight-color:#ffcc00;
   --background-color:#333;
+  --header-primary-color:#008673;
 }
 body {
   margin: 0;
