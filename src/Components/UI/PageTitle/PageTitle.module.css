@@ -5,3 +5,12 @@
     color: var(--hightlight-color);
     z-index: 0;
 }
+.pageTitleContainer{
+   
+    background: white;
+}
+
+.sticky{
+    position: sticky;
+    top: 0;
+}

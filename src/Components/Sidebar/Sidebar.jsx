@@ -1,11 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link as ScrollLink, scroller } from "react-scroll";
+import { AppContext } from "../../Context/Context";
 import "./Sidebar.css";
 // import { Link } from 'react-router-dom'; // If using React Router
 
 const Sidebar = () => {
-  const [isOpen, setIsOpen] = useState(true);
-  const [activeSection, setActiveSection] = useState('home');
+    const {isOpen} = useContext(AppContext);
+//   const [isOpen, setIsOpen] = useState(true);
+  const [activeSection, setActiveSection] = useState('aboutMe');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -13,7 +15,7 @@ const Sidebar = () => {
       const sections = document.querySelectorAll(".section");
 
       sections.forEach((section) => {
-        const offsetTop = section.offsetTop - 50; // Adjust offset based on your design
+        const offsetTop = section.offsetTop - 250; // Adjust offset based on your design
         const offsetBottom = offsetTop + section.offsetHeight;
 
         if (scrollPosition >= offsetTop && scrollPosition < offsetBottom) {
@@ -32,9 +34,7 @@ const Sidebar = () => {
     };
   }, []);
 
-  const toggleSidebar = () => {
-    setIsOpen(!isOpen);
-  };
+
 
     const scrollToSection = (sectionId) => {
        
@@ -49,21 +49,26 @@ const Sidebar = () => {
     <>
     <div className="navbarHeaderBar">
 
-      <button className="toggle-btn" onClick={toggleSidebar}>
+      {/* <button className="toggle-btn" onClick={toggleSidebar}>
         ☰
-      </button>
+      </button> */}
     </div>
       <div className={`sidebar panel ${isOpen ? "open" : ""}`}>
         <nav>
           <ul>
-            <li>
+            {/* <li>
               <ScrollLink className={`${activeSection === 'home' ? 'active':""}`} onClick={scrollToSection.bind(this,'home')} href="#home" to="section1" smooth={true} duration={800}>
                 Home
               </ScrollLink>
-            </li>
+            </li> */}
             <li>
               <ScrollLink className={`${activeSection === 'aboutMe' ? 'active':""}`} onClick={scrollToSection.bind(this,'aboutMe')} href="#aboutMe" to="section2" smooth={true} duration={800}>
                 About Me
+              </ScrollLink>
+            </li>
+            <li>
+              <ScrollLink className={`${activeSection === 'skills' ? 'active':""}`}  onClick={scrollToSection.bind(this,'skills')} href="#skills" to="skills" smooth={true} duration={800}>
+                Skills
               </ScrollLink>
             </li>
             <li>
