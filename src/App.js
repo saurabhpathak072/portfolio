@@ -6,6 +6,7 @@ import Home from "./Components/App/Home/Home";
 import HeaderTitle from "./Components/UI/HeaderTitle/HeaderTitle";
 // import About from "./Components/App/About/About";
 import Skills from "./Components/App/Skills/Skills";
+import Timeline from "./Components/UI/Timeline/Timeline";
 
 
 function App() {
@@ -31,7 +32,7 @@ function App() {
             Contact Me
           </Element>
           <Element id="section4" name="section4" className="section">
-            Section 4
+            <Timeline />
           </Element>
         </main>
       </Container>
