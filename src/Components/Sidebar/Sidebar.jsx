@@ -5,9 +5,8 @@ import "./Sidebar.css";
 // import { Link } from 'react-router-dom'; // If using React Router
 
 const Sidebar = () => {
-    const {isOpen} = useContext(AppContext);
-//   const [isOpen, setIsOpen] = useState(true);
-  const [activeSection, setActiveSection] = useState('aboutMe');
+  const { isOpen } = useContext(AppContext);
+  const [activeSection, setActiveSection] = useState("aboutMe");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -34,51 +33,114 @@ const Sidebar = () => {
     };
   }, []);
 
-
-
-    const scrollToSection = (sectionId) => {
-       
-      scroller.scrollTo(sectionId, {
-        duration: 1000,
-        delay: 0,
-        smooth: 'easeInOutQuart',
-      });
-    };
+  const scrollToSection = (sectionId) => {
+    scroller.scrollTo(sectionId, {
+      duration: 1000,
+      delay: 0,
+      smooth: "easeInOutQuart",
+    });
+  };
 
   return (
     <>
-    <div className="navbarHeaderBar">
-
-      {/* <button className="toggle-btn" onClick={toggleSidebar}>
-        ☰
-      </button> */}
-    </div>
+      <div className="navbarHeaderBar"></div>
       <div className={`sidebar panel ${isOpen ? "open" : ""}`}>
         <nav>
           <ul>
-            {/* <li>
-              <ScrollLink className={`${activeSection === 'home' ? 'active':""}`} onClick={scrollToSection.bind(this,'home')} href="#home" to="section1" smooth={true} duration={800}>
-                Home
-              </ScrollLink>
-            </li> */}
             <li>
-              <ScrollLink className={`${activeSection === 'aboutMe' ? 'active':""}`} onClick={scrollToSection.bind(this,'aboutMe')} href="#aboutMe" to="section2" smooth={true} duration={800}>
+              <ScrollLink
+                className={`${activeSection === "aboutMe" ? "active" : ""}`}
+                onClick={scrollToSection.bind(this, "aboutMe")}
+                href="#aboutMe"
+                to="section2"
+                smooth={true}
+                duration={800}
+              >
                 About Me
               </ScrollLink>
             </li>
             <li>
-              <ScrollLink className={`${activeSection === 'skills' ? 'active':""}`}  onClick={scrollToSection.bind(this,'skills')} href="#skills" to="skills" smooth={true} duration={800}>
+              <ScrollLink
+                className={`${activeSection === "skills" ? "active" : ""}`}
+                onClick={scrollToSection.bind(this, "skills")}
+                href="#skills"
+                to="skills"
+                smooth={true}
+                duration={800}
+              >
                 Skills
               </ScrollLink>
             </li>
             <li>
-              <ScrollLink className={`${activeSection === 'contactMe' ? 'active':""}`}  onClick={scrollToSection.bind(this,'contactMe')} href="#contactMe" to="section3" smooth={true} duration={800}>
+              <ScrollLink
+                className={`${activeSection === "experience" ? "active" : ""}`}
+                onClick={scrollToSection.bind(this, "experience")}
+                href="#experience"
+                to="experience"
+                smooth={true}
+                duration={800}
+              >
+                Experience
+              </ScrollLink>
+            </li>
+            <li>
+              <ScrollLink
+                className={`${activeSection === "education" ? "active" : ""}`}
+                onClick={scrollToSection.bind(this, "education")}
+                href="#education"
+                to="education"
+                smooth={true}
+                duration={800}
+              >
+                Education
+              </ScrollLink>
+            </li>
+            <li>
+              <ScrollLink
+                className={`${activeSection === "feedback" ? "active" : ""}`}
+                onClick={scrollToSection.bind(this, "feedback")}
+                href="#feedback"
+                to="feedback"
+                smooth={true}
+                duration={800}
+              >
+                Feedback
+              </ScrollLink>
+            </li>
+            <li>
+              <ScrollLink
+                className={`${activeSection === "contactMe" ? "active" : ""}`}
+                onClick={scrollToSection.bind(this, "contactMe")}
+                href="#contactMe"
+                to="section3"
+                smooth={true}
+                duration={800}
+              >
                 Contact Me
               </ScrollLink>
             </li>
             <li>
-              <ScrollLink className={`${activeSection === 'section4' ? 'active':""}`}  onClick={scrollToSection.bind(this,'section4')} href="#section4" to="section4" smooth={true} duration={800}>
-              section4 
+              <ScrollLink
+                className={`${activeSection === "projects" ? "active" : ""}`}
+                onClick={scrollToSection.bind(this, "projects")}
+                href="#projects"
+                to="projects"
+                smooth={true}
+                duration={800}
+              >
+                Projects
+              </ScrollLink>
+            </li>
+            <li>
+              <ScrollLink
+                className={`${activeSection === "otherwork" ? "active" : ""}`}
+                onClick={scrollToSection.bind(this, "otherwork")}
+                href="#otherwork"
+                to="otherwork"
+                smooth={true}
+                duration={800}
+              >
+                Other Works
               </ScrollLink>
             </li>
           </ul>
