@@ -1,5 +1,5 @@
 import React from 'react'
-import { testData } from '../../../Data/data'
+import { educationData } from '../../../Data/data'
 import PageTitle from '../../UI/PageTitle/PageTitle'
 import Timeline from '../../UI/Timeline/Timeline'
 import styles from './Education.module.css'
@@ -11,7 +11,7 @@ const Education = () => {
             Education
         </PageTitle>
         <div>
-        <Timeline data={testData}/>
+        <Timeline data={educationData}/>
         </div>
     </div>
   )

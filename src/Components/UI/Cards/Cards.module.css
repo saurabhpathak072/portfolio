@@ -1,0 +1,14 @@
+.card{
+    z-index: -1;
+}
+
+.cardImage{
+    height: 50px;
+    width: 50px;
+}
+
+.cardBody{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Link as ScrollLink, scroller } from "react-scroll";
-import { AppContext } from "../../Context/Context";
+import { AppContext } from "../../../Context/Context";
 import "./Sidebar.css";
 // import { Link } from 'react-router-dom'; // If using React Router
 
@@ -129,6 +129,18 @@ const Sidebar = () => {
                 duration={800}
               >
                 Projects
+              </ScrollLink>
+            </li>
+            <li>
+              <ScrollLink
+                className={`${activeSection === "certifications" ? "active" : ""}`}
+                onClick={scrollToSection.bind(this, "certifications")}
+                href="#certifications"
+                to="certifications"
+                smooth={true}
+                duration={800}
+              >
+                Certifications
               </ScrollLink>
             </li>
             <li>

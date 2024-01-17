@@ -1,5 +1,5 @@
 import React from 'react';
-import { testData } from '../../../Data/data';
+import { experienceData } from '../../../Data/data';
 import PageTitle from '../../UI/PageTitle/PageTitle';
 import Timeline from '../../UI/Timeline/Timeline';
 import styles from './Experience.module.css'
@@ -11,7 +11,7 @@ const Experience = () => {
             Experience
         </PageTitle>
         <div>
-        <Timeline data={testData}/>
+        <Timeline data={experienceData}/>
         </div>
     </div>
   )

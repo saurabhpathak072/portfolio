@@ -51,6 +51,10 @@
     display: block; /* Ensures the entire link area is clickable */
     padding: 8px;
   }
+
+  .active{
+    background: rgba(0, 0, 0, 0.25);
+  }
   
   a:hover,.active {
     color: #ffcc00;
