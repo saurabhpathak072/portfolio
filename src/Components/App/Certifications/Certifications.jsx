@@ -1,6 +1,7 @@
 import React from 'react'
 import PageTitle from '../../UI/PageTitle/PageTitle'
 import styles from './Certifications.module.css'
+import CertificationsCard from './CertificationsCard/CertificationsCard'
 
 const Certifications = () => {
   return (
@@ -8,7 +9,9 @@ const Certifications = () => {
     <PageTitle size={"h2"} className={"p-2"}>
       Certifications
     </PageTitle>
-    <div></div>
+    <div>
+      <CertificationsCard/>
+    </div>
   </div>
   )
 }

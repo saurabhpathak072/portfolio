@@ -1,4 +1,13 @@
 .title{
-    display: block;
+    display: flex;
+    color:var(--header-primary-color);
+    align-items: baseline;
+}
+
+.headerTitle{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
     color:var(--header-primary-color);
 }

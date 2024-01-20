@@ -22,11 +22,21 @@ const Timeline = ({ data }) => {
           <img src={dt.logoImg} alt="Company 1" />
           <div className={style.textBox}>
             <h4>{dt.title}</h4>
-            <div className="">
-              {dt.subtitle}
-            </div>
+            <div className="">{dt.subtitle}</div>
             <small>{dt.tenure}</small>
             <p>{dt.description}</p>
+            {dt.skills && <div>
+              <div>
+                <b>Skills Worked on: </b>
+              </div>
+              <div className="d-flex justify-content-around">
+                {
+                  dt.skills.map((sk, i)=>{
+                    return <div key={i}>{sk}</div>
+                  })
+                }
+              </div>
+            </div>}
             <span
               className={
                 isEven ? style.rightContainerArrow : style.leftContainerArrow

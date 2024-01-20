@@ -1,9 +1,9 @@
 import React from 'react'
 import style from './Title.module.css'
 
-const Title = ({children}) => {
+const Title = ({children, isHeader}) => {
   return (
-    <div className={style.title}>{children}</div>
+    <div className={isHeader ? style.headerTitle: style.title}>{children}</div>
   )
 }
 

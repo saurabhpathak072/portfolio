@@ -1,6 +1,8 @@
 import React from "react";
+import { Container } from "react-bootstrap";
 import PageTitle from "../../UI/PageTitle/PageTitle";
 import styles from "./Project.module.css";
+import ProjectCard from "./ProjectCard/ProjectCard";
 
 const Project = () => {
   return (
@@ -8,7 +10,11 @@ const Project = () => {
       <PageTitle size={"h2"} className={"p-2"}>
         Prjects
       </PageTitle>
-      <div></div>
+      <div>
+        <Container>
+          <ProjectCard/>
+        </Container>
+      </div>
     </div>
   );
 };

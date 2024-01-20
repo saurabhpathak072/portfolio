@@ -5,7 +5,7 @@ import "./Sidebar.css";
 // import { Link } from 'react-router-dom'; // If using React Router
 
 const Sidebar = () => {
-  const { isOpen } = useContext(AppContext);
+  const { isOpen, isMobile, toggleSidebar } = useContext(AppContext);
   const [activeSection, setActiveSection] = useState("aboutMe");
 
   useEffect(() => {
@@ -34,6 +34,7 @@ const Sidebar = () => {
   }, []);
 
   const scrollToSection = (sectionId) => {
+    toggleSidebar();
     scroller.scrollTo(sectionId, {
       duration: 1000,
       delay: 0,
@@ -43,7 +44,7 @@ const Sidebar = () => {
 
   return (
     <>
-      <div className="navbarHeaderBar"></div>
+      {(isMobile && isOpen) && <div onClick={toggleSidebar} className="navbarHeaderBar"></div>}
       <div className={`sidebar panel ${isOpen ? "open" : ""}`}>
         <nav>
           <ul>
