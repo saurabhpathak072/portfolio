@@ -16,9 +16,10 @@ import { Icon } from "./Components/UI/Icon/Icon";
 // import { Envelope, Mailbox, Phone, Telephone } from "react-bootstrap-icons";
 import { useContext } from "react";
 import { AppContext } from "./Context/Context";
+import { userData } from "./Data/data";
 
 function App() {
-  const {isDesktop} = useContext(AppContext);
+  const { isDesktop } = useContext(AppContext);
   return (
     <Container fluid className="App p-0 m-0">
       <header className="max-h100vh  App-header">
@@ -26,26 +27,28 @@ function App() {
       </header>
       <main className="mainContainer">
         <HeaderTitle className="headerTitle" isHeader={isDesktop} sticky={true}>
-          {isDesktop && <div>
-            <div className={'smallfontSize'}>
-              {/* <small className="Header_contact"> */}
-                <Icon iconName={"Telephone"} /> 7840937715
-              {/* </small> */}
+          {isDesktop && (
+            <div>
+              <div className={"smallfontSize"}>
+                {/* <small className="Header_contact"> */}
+                <Icon iconName={"Telephone"} /> {userData.mob}
+                {/* </small> */}
+              </div>
+              <div className={"smallfontSize"}>
+                {/* <small className="Header_contact"> */}
+                <Icon iconName={"Envelope"} /> {" "}
+                {userData.email}
+                {/* </small> */}
+              </div>
             </div>
-            <div className={'smallfontSize'}>
-              {/* <small className="Header_contact"> */}
-                {" "}
-                <Icon iconName={"Envelope"} /> saurabhpathak072@gmail.com
-              {/* </small> */}
-            </div>
-          </div>}
+          )}
 
-          <div> Saurabh Pathak</div>
+          <div> {userData.name}</div>
         </HeaderTitle>
         <Element id="aboutMe" name="section2" className="section">
           <Home />
         </Element>
-        <Element  id="skills" name="skills" className="section">
+        <Element id="skills" name="skills" className="section">
           <Skills />
         </Element>
         <Element id="experience" name="experience" className="section">

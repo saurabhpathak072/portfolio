@@ -1,6 +1,8 @@
 import React from 'react'
+import { Container } from 'react-bootstrap'
 import PageTitle from '../../UI/PageTitle/PageTitle'
 import styles from './Otherwork.module.css'
+import OtherWorkCard from './OtherWorkCard/OtherWorkCard'
 
 const OtherWork = () => {
   return (
@@ -8,7 +10,11 @@ const OtherWork = () => {
     <PageTitle size={"h2"} className={"p-2"}>
       Other Works
     </PageTitle>
-    <div></div>
+    <div>
+      <Container>
+        <OtherWorkCard/>
+      </Container>
+    </div>
   </div>
   )
 }
