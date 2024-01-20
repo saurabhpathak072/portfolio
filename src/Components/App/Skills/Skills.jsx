@@ -3,7 +3,7 @@ import SkillCards from "../../UI/Cards/SkillCards";
 import PageTitle from "../../UI/PageTitle/PageTitle";
 import styles from "./Skills.module.css";
 
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { skillsSet } from "../../../Data/data";
 
 const Skills = () => {
