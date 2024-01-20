@@ -10,7 +10,8 @@
     background-color: var(--header-primary-color);
     padding-top: 50px;
     transition: left 0.3s ease;
-    z-index: 1;
+    z-index: 95;
+    overflow: auto;
   }
   
   .sidebar.open {

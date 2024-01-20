@@ -20,6 +20,7 @@
 .primaryButton:hover{
     background-color: var(--header-primary-color);
     border-color: var(--header-primary-color);
+    color: white;
 }
 .primaryButton:active{
     background-color: var(--header-primary-color);

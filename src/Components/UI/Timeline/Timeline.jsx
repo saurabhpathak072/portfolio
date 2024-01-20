@@ -29,13 +29,13 @@ const Timeline = ({ data }) => {
               <div>
                 <b>Skills Worked on: </b>
               </div>
-              <div className="d-flex justify-content-around">
+              <ul className="d-flex flex-wrap justify-content-around">
                 {
                   dt.skills.map((sk, i)=>{
-                    return <div key={i}>{sk}</div>
+                    return <li className="px-1" key={i}>{sk}</li>
                   })
                 }
-              </div>
+              </ul>
             </div>}
             <span
               className={

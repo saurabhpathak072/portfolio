@@ -1,16 +1,26 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
-import { Link } from "react-bootstrap-icons";
+import { Button, Col, Container, Row } from "react-bootstrap";
 import { projectList } from "../../../../Data/data";
 import SkillCards from "../../../UI/Cards/SkillCards";
-import { Icon } from "../../../UI/Icon/Icon";
-// import styles from "./ProjectCard.module.css";
+import styles from "./ProjectCard.module.css";
 
 const ProjectCard = () => {
   const project = projectList.map((prj, index) => {
     return (
-      <Col key={index} lg={6}>
-        <SkillCards description={prj.description} url={prj.url} title={prj.title} subtitle={prj.tenure} image={prj.logoImg}/>
+      <Col className={`py-2 my-2 ${styles.ProjectCard}`} key={index} lg={6}>
+  
+        <SkillCards
+          skills={prj.skills}
+          description={prj.description}
+          url={prj.url}
+          header={prj.title}
+          subtitle={prj.subtitle}
+          tenure={prj.tenure}
+          image={prj.logoImg}
+        >
+          
+        </SkillCards>
+        
       </Col>
     );
   });

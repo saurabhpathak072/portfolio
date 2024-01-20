@@ -31,7 +31,7 @@ const Home = () => {
            
           </p>
           <div className="mt-5 ">
-            <Button className={styles.primaryButton} variant="outline-primary" >Download Resume</Button>
+            <Button className={styles.primaryButton} variant="outline" >Download Resume</Button>
           </div>
         </Col>
         <Col xs={12} lg={6} md={6}>

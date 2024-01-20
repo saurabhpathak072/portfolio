@@ -1,5 +1,5 @@
 .card{
-    z-index: -1;
+    z-index: 50;
 }
 
 .cardImage{
@@ -24,4 +24,17 @@
 .cardHeader,.cardFooter{
     background-color: var(--header-primary-color);
     color: white;
+}
+
+.description{
+    width: 100%;
+    min-height: 200px;
+}
+
+.btn{
+    z-index: 1000;
+}
+
+.Buttoncontainer{
+
 }

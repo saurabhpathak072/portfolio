@@ -25,7 +25,7 @@ function App() {
         <Sidebar />
       </header>
       <main className="mainContainer">
-        <HeaderTitle isHeader={isDesktop} sticky={true}>
+        <HeaderTitle className="headerTitle" isHeader={isDesktop} sticky={true}>
           {isDesktop && <div>
             <div className={'smallfontSize'}>
               {/* <small className="Header_contact"> */}
