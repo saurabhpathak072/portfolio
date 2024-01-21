@@ -22,6 +22,8 @@ import bootstraplogo from "../Assets/Images/Skills/bootstraplogo.jpeg";
 import aspnetlogo from "../Assets/Images/Skills/aspNetLogo.jpg";
 import devexpress from "../Assets/Images/Skills/devexpressLogo.png";
 
+import homeLogo from "../Assets/Images/coder1.jpg"
+
 export const experienceData = [
   {
     logoImg: lntlogo,
@@ -361,6 +363,8 @@ export const certificateList =[
 export const userData ={
   name:"Saurabh Pathak",
   mob:"7840937715",
+  currLoc:"Pune, India",
+  homeLogo:homeLogo,
   email:"saurabhpathak072@gmail.com",
   oldProfile:"https://saurabhpathak072-f8a1f.web.app/",
   description1:`I have 4 years of experience with frontend and various web
@@ -372,5 +376,9 @@ export const userData ={
   React JS, React-Native, javascript, jQuery, and bootstrap.`,
   description3:`The crossover between design and programming has always been an
   interesting topic. I am always trying to learn new technologies and
-  explore them.`
+  explore them.`,
+  linkdin:"https://www.linkedin.com/in/saurabh-pathak-35b2b0190/",
+  github:"https://github.com/saurabhpathak072",
+  email2:"saurabhspathak072@gmail.com",
+  otherUrl:"https://saurabhpathak072-f8a1f.web.app/"
 }
