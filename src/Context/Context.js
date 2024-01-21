@@ -1,6 +1,7 @@
 import { createContext, useEffect, useState } from "react";
 import useWindowDimensions from "../Hooks/useWindowDimensions";
-import { certificateList, educationData, experienceData, otherWorkList, projectList, skillsSet, userData } from "../Data/data";
+// import { certificateList, educationData, experienceData, otherWorkList, projectList, skillsSet } from "../Data/data";
+import { fetchUser } from "../utils/api";
 
 export const AppContext = createContext({
   isOpen: true,
@@ -29,32 +30,6 @@ const [data, setData] = useState({
   otherWorkList:[],
   certificateList:[]
 })
-useEffect(() => {
-  setData((prevdata)=>{
-    return{
-      ...prevdata,
-      user:userData,
-      experience:experienceData,
-      education:educationData,
-      skillsSet:skillsSet,
-      projectList:projectList,
-      otherWorkList:otherWorkList,
-      certificateList:certificateList
-    }
-  })
-
-  return () => {
-    setData({
-      user:{},
-      experience:[],
-      education:[],
-      skillsSet:[],
-      projectList:[],
-      otherWorkList:[],
-      certificateList:[]
-    })
-  }
-}, [])
 
   const [isOpen, setIsOpen] = useState(width > 575 ? true : false);
   const [isMobile, setIsMobile] = useState(false);
@@ -70,7 +45,48 @@ useEffect(() => {
     setIsOpen(isDesktop);
     setIsDesktop(isDesktop);
     setIsMobile(!isDesktop);
+   
   }, [width]);
+
+  useEffect(() => {
+    const fetchData=async ()=>{
+      const {data} = await fetchUser();
+      console.log('====================================');
+      console.log(data.data);
+      const {user,experience, skills,education,certificate,projects,otherWork} = data?.data
+      setData((prevData)=>{
+        return{
+          ...prevData,
+          user:{
+            ...user,
+          },
+          experience:[...experience],
+          education:[...education],
+          skillsSet:[...skills],
+          projectList:[...projects],
+          certificateList:[...certificate],
+          otherWorkList:[...otherWork]
+        }
+      })
+      console.log('===================================='); 
+    }
+    
+    fetchData()
+
+    return ()=>{
+      setData({
+        user:{},
+        experience:[],
+        education:[],
+        skillsSet:[],
+        projectList:[],
+        otherWorkList:[],
+        certificateList:[]
+      })
+    }
+  
+  }, [])
+  
 
   return (
     <AppContext.Provider value={{ isOpen,isMobile,isDesktop, toggleSidebar, setIsOpen, data }}>
