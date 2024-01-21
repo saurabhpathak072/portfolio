@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { certificateList } from "../../../../Data/data";
+// import { certificateList } from "../../../../Data/data";
 import SkillCards from "../../../UI/Cards/SkillCards";
 // import styles from "./CertificationsCard.module.css";
 

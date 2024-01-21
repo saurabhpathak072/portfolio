@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 
 import styles from "./Home.module.css";
-import coder1 from "../../../Assets/Images/coder1.jpg";
+// import coder1 from "../../../Assets/Images/coder1.jpg";
 import { Container, Row, Col, Image, Button } from "react-bootstrap";
-import { userData } from "../../../Data/data";
+// import { userData } from "../../../Data/data";
 import { AppContext } from "../../../Context/Context";
 
 const Home = () => {
