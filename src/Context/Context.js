@@ -1,4 +1,4 @@
-import { createContext, useEffect, useState } from "react";
+import { createContext, useEffect, useLayoutEffect, useState } from "react";
 import useWindowDimensions from "../Hooks/useWindowDimensions";
 // import { certificateList, educationData, experienceData, otherWorkList, projectList, skillsSet } from "../Data/data";
 import { fetchUser } from "../utils/api";
@@ -53,7 +53,7 @@ const [data, setData] = useState({
       const {data} = await fetchUser();
       console.log('====================================');
       console.log(data.data);
-      const {user,experience, skills,education,certificate,projects,otherWork} = data?.data
+      const {user,experience,certificate, skills,education,projects,otherWork} = data?.data
       setData((prevData)=>{
         return{
           ...prevData,
