@@ -32,7 +32,7 @@ const Timeline = ({ data }) => {
               <ul className="d-flex flex-wrap justify-content-around">
                 {
                   dt.skills.map((sk, i)=>{
-                    return <li className="px-1" key={i}>{sk}</li>
+                    return <li className="px-1" key={sk._id}>{sk.title}</li>
                   })
                 }
               </ul>
