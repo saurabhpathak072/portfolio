@@ -1,4 +1,4 @@
-import { createContext, useEffect, useLayoutEffect, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import useWindowDimensions from "../Hooks/useWindowDimensions";
 // import { certificateList, educationData, experienceData, otherWorkList, projectList, skillsSet } from "../Data/data";
 import { fetchUser } from "../utils/api";
@@ -16,6 +16,9 @@ export const AppContext = createContext({
     projectList:[],
     otherWorkList:[],
     certificateList:[]
+  },
+  uiState:{
+    isLoading:false
   }
 });
 
@@ -29,6 +32,10 @@ const [data, setData] = useState({
   projectList:[],
   otherWorkList:[],
   certificateList:[]
+});
+
+const [uiState, setUiState] = useState({
+  isLoading:false
 })
 
   const [isOpen, setIsOpen] = useState(width > 575 ? true : false);
@@ -40,6 +47,15 @@ const [data, setData] = useState({
     });
   };
 
+  const toggleShowLoader=()=>{
+    setUiState((prevUiState)=>{
+      return {
+        ...prevUiState,
+        isLoading:!prevUiState.isLoading
+      }
+    })
+  }
+
   useEffect(() => {
     const isDesktop = width > 575 ? true : false;
     setIsOpen(isDesktop);
@@ -50,6 +66,7 @@ const [data, setData] = useState({
 
   useEffect(() => {
     const fetchData=async ()=>{
+      
       const {data} = await fetchUser();
       console.log('====================================');
       console.log(data.data);
@@ -59,6 +76,7 @@ const [data, setData] = useState({
           ...prevData,
           user:{
             ...user,
+            id:user._id
           },
           experience:[...experience],
           education:[...education],
@@ -68,10 +86,17 @@ const [data, setData] = useState({
           otherWorkList:[...otherWork]
         }
       })
+      toggleShowLoader();
       console.log('===================================='); 
     }
-    
-    fetchData()
+    try {
+      toggleShowLoader()
+      fetchData()
+    } catch (error) {
+      toggleShowLoader();
+      console.error(error);
+    }
+   
 
     return ()=>{
       setData({
@@ -89,7 +114,7 @@ const [data, setData] = useState({
   
 
   return (
-    <AppContext.Provider value={{ isOpen,isMobile,isDesktop, toggleSidebar, setIsOpen, data }}>
+    <AppContext.Provider value={{ isOpen,isMobile,isDesktop, toggleSidebar,toggleShowLoader, setIsOpen, data, uiState,setData}}>
       {children}
     </AppContext.Provider>
   );

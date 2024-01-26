@@ -3,7 +3,7 @@ import Axios from 'axios'
 
 export const fetchUser=async ()=>{
     try {
-        const {data} =await Axios.get('http://localhost:4000/user/65aeb8b604e667afa88d7efa');
+        const {data} =await Axios.get('http://localhost:4000/user/65afb21b9b966e194c7705cd');
         return {data};
     } catch (error) {
         console.log(error);
