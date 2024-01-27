@@ -38,7 +38,7 @@ const SkillCards = ({
     footer = (
       <ul className="d-flex justify-content-around flex-wrap">
         {skills.map((sk, index) => {
-          return <li key={index}>{sk}</li>;
+          return <li key={index}>{sk.title}</li>;
         })}
       </ul>
     );
