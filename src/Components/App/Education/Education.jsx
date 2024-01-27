@@ -5,7 +5,7 @@ import Timeline from '../../UI/Timeline/Timeline'
 import styles from './Education.module.css'
 import { AppContext } from '../../../Context/Context'
 
-const Education = () => {
+const Education = ({education}) => {
   const { data} = useContext(AppContext)
   return (
     <div className={styles.container}>
@@ -13,7 +13,7 @@ const Education = () => {
             Education
         </PageTitle>
         <div>
-        <Timeline data={data.education}/>
+        <Timeline data={education}/>
         </div>
     </div>
   )

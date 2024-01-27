@@ -1,7 +1,7 @@
 import { createContext, useEffect, useState } from "react";
 import useWindowDimensions from "../Hooks/useWindowDimensions";
 // import { certificateList, educationData, experienceData, otherWorkList, projectList, skillsSet } from "../Data/data";
-import { fetchUser } from "../utils/api";
+
 
 export const AppContext = createContext({
   isOpen: true,
@@ -64,53 +64,53 @@ const [uiState, setUiState] = useState({
    
   }, [width]);
 
-  useEffect(() => {
-    const fetchData=async ()=>{
+  // useEffect(() => {
+  //   const fetchData=async ()=>{
       
-      const {data} = await fetchUser();
-      console.log('====================================');
-      console.log(data.data);
-      const {user,experience,certificate, skills,education,projects,otherWork} = data?.data
-      setData((prevData)=>{
-        return{
-          ...prevData,
-          user:{
-            ...user,
-            id:user._id
-          },
-          experience:[...experience],
-          education:[...education],
-          skillsSet:[...skills],
-          projectList:[...projects],
-          certificateList:[...certificate],
-          otherWorkList:[...otherWork]
-        }
-      })
-      toggleShowLoader();
-      console.log('===================================='); 
-    }
-    try {
-      toggleShowLoader()
-      fetchData()
-    } catch (error) {
-      toggleShowLoader();
-      console.error(error);
-    }
+  //     const {data} = await fetchUser();
+  //     console.log('====================================');
+  //     console.log(data.data);
+  //     const {user,experience,certificate, skills,education,projects,otherWork} = data?.data
+  //     setData((prevData)=>{
+  //       return{
+  //         ...prevData,
+  //         user:{
+  //           ...user,
+  //           id:user._id
+  //         },
+  //         experience:[...experience],
+  //         education:[...education],
+  //         skillsSet:[...skills],
+  //         projectList:[...projects],
+  //         certificateList:[...certificate],
+  //         otherWorkList:[...otherWork]
+  //       }
+  //     })
+  //     toggleShowLoader();
+  //     console.log('===================================='); 
+  //   }
+  //   try {
+  //     toggleShowLoader()
+  //     fetchData()
+  //   } catch (error) {
+  //     toggleShowLoader();
+  //     console.error(error);
+  //   }
    
 
-    return ()=>{
-      setData({
-        user:{},
-        experience:[],
-        education:[],
-        skillsSet:[],
-        projectList:[],
-        otherWorkList:[],
-        certificateList:[]
-      })
-    }
+  //   return ()=>{
+  //     setData({
+  //       user:{},
+  //       experience:[],
+  //       education:[],
+  //       skillsSet:[],
+  //       projectList:[],
+  //       otherWorkList:[],
+  //       certificateList:[]
+  //     })
+  //   }
   
-  }, [])
+  // }, [])
   
 
   return (

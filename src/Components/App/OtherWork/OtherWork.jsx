@@ -4,7 +4,7 @@ import PageTitle from '../../UI/PageTitle/PageTitle'
 import styles from './Otherwork.module.css'
 import OtherWorkCard from './OtherWorkCard/OtherWorkCard'
 
-const OtherWork = () => {
+const OtherWork = ({otherWorkList}) => {
   return (
     <div className={styles.container}>
     <PageTitle size={"h2"} className={"p-2"}>
@@ -12,7 +12,7 @@ const OtherWork = () => {
     </PageTitle>
     <div>
       <Container>
-        <OtherWorkCard/>
+        <OtherWorkCard otherWorkList={otherWorkList}/>
       </Container>
     </div>
   </div>

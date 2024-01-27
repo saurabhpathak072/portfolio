@@ -5,7 +5,7 @@ import Timeline from '../../UI/Timeline/Timeline';
 import styles from './Experience.module.css'
 import { AppContext } from '../../../Context/Context';
 
-const Experience = () => {
+const Experience = ({experience}) => {
   const {data} = useContext(AppContext)
   return (
     <div className={styles.experience}>
@@ -13,7 +13,7 @@ const Experience = () => {
             Experience
         </PageTitle>
         <div>
-        <Timeline data={data.experience}/>
+        <Timeline data={experience}/>
         </div>
     </div>
   )

@@ -5,9 +5,9 @@ import SkillCards from "../../../UI/Cards/SkillCards";
 import styles from "./ProjectCard.module.css";
 import { AppContext } from "../../../../Context/Context";
 
-const ProjectCard = () => {
+const ProjectCard = ({projectList}) => {
   const {data} = useContext(AppContext)
-  const project = data?.projectList.map((prj, index) => {
+  const project = projectList.map((prj, index) => {
     return (
       <Col className={`py-2 my-2 ${styles.ProjectCard}`} key={index} lg={6}>
   

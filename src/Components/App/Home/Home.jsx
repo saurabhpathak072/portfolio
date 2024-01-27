@@ -1,37 +1,50 @@
-import React, { useContext } from "react";
-
+import React from "react";
 import styles from "./Home.module.css";
-// import coder1 from "../../../Assets/Images/coder1.jpg";
 import { Container, Row, Col, Image, Button } from "react-bootstrap";
-// import { userData } from "../../../Data/data";
-import { AppContext } from "../../../Context/Context";
 
-const Home = () => {
-  const {data} = useContext(AppContext)
+const Home = ({ user }) => {
+  const downloadResumeHandler = () => {
+    window.open(user.downloadResumeURL, "_blank");
+  };
   return (
     <Container className={styles.Home}>
       <Row>
         <Col xs={12} lg={6} md={6}>
-          <p>
-            {data.user?.description1}
-          </p>
-          <p>
-            {data.user?.description2}
-          </p>
-          <p>
-            {data.user?.description3}
-          </p>
-          {data.user?.oldProfile &&<p>
-            for more information look at my web profile:
-            <a className={styles.mail} href={data.user.oldProfile} target={'_blank'} rel="noreferrer"> {data.user.oldProfile}</a>
-           
-          </p>}
-          <div className="mt-5 ">
-            <Button className={styles.primaryButton} variant="outline" >Download Resume</Button>
-          </div>
+          <p>{user?.description1}</p>
+          <p>{user?.description2}</p>
+          <p>{user?.description3}</p>
+          {user?.oldProfile && (
+            <p>
+              for more information look at my web profile:
+              <a
+                className={styles.mail}
+                href={user.oldProfile}
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                {" "}
+                {user.oldProfile}
+              </a>
+            </p>
+          )}
+          {user?.downloadResumeURL && (
+            <div className="mt-5 ">
+              <Button
+                className={styles.primaryButton}
+                variant="outline"
+                onClick={downloadResumeHandler}
+              >
+                Download Resume
+              </Button>
+            </div>
+          )}
         </Col>
         <Col xs={12} lg={6} md={6}>
-          <Image className={styles.image} src={data.user.homeLogo} alt="Coder Image 1" />
+          <Image
+            className={styles.image}
+            src={user?.homeLogo}
+            alt="Coder Image 1"
+          />
         </Col>
       </Row>
     </Container>

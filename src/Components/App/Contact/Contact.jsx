@@ -6,9 +6,9 @@ import ContactMap from "./Map/ContactMap";
 import {Icon} from '../../UI/Icon/Icon'
 import { AppContext } from "../../../Context/Context";
 
-const Contact = () => {
-  const {data} = useContext(AppContext);
-  const {user} = data
+const Contact = ({user}) => {
+  // const {data} = useContext(AppContext);
+  // const {user} = data
   return (
     <div className={styles.container}>
       <PageTitle size={"h2"} className={"p-2"}>

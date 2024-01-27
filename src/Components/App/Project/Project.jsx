@@ -4,7 +4,7 @@ import PageTitle from "../../UI/PageTitle/PageTitle";
 import styles from "./Project.module.css";
 import ProjectCard from "./ProjectCard/ProjectCard";
 
-const Project = () => {
+const Project = ({projectList}) => {
   return (
     <div className={styles.container}>
       <PageTitle size={"h2"} className={"p-2"}>
@@ -12,7 +12,7 @@ const Project = () => {
       </PageTitle>
       <div>
         <Container>
-          <ProjectCard/>
+          <ProjectCard projectList={projectList}/>
         </Container>
       </div>
     </div>

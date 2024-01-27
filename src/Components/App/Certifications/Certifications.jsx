@@ -4,7 +4,7 @@ import styles from './Certifications.module.css'
 import CertificationsCard from './CertificationsCard/CertificationsCard'
 import { AppContext } from '../../../Context/Context'
 
-const Certifications = () => {
+const Certifications = ({certificateList}) => {
   const {data} = useContext(AppContext)
   return (
     <div className={styles.container}>
@@ -12,7 +12,7 @@ const Certifications = () => {
       Certifications
     </PageTitle>
     <div>
-      <CertificationsCard data={data.certificateList}/>
+      <CertificationsCard data={certificateList}/>
     </div>
   </div>
   )

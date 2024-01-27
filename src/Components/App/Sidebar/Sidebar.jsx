@@ -4,7 +4,7 @@ import { AppContext } from "../../../Context/Context";
 import "./Sidebar.css";
 // import { Link } from 'react-router-dom'; // If using React Router
 
-const Sidebar = () => {
+const Sidebar = ({user}) => {
   const { isOpen, isMobile, toggleSidebar } = useContext(AppContext);
   const [activeSection, setActiveSection] = useState("aboutMe");
 
