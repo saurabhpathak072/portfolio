@@ -6,6 +6,8 @@ import { Container } from "react-bootstrap";
 import Main from "./Pages/Main";
 
 import { useSelector } from "react-redux";
+import Error from "./Components/UI/Error/Error";
+import Notfound from "./Pages/Notfound/Notfound";
 
 
 function App() {
@@ -21,6 +23,7 @@ function App() {
         <Routes>
        
           <Route path="/:userid" element={<Main user={user} />} />
+          <Route path="/" element={<Notfound/>} />
        
         </Routes>
       </main>
