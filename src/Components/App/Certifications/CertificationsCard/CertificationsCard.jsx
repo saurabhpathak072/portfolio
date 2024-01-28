@@ -15,7 +15,7 @@ const CertificationsCard = ({data}) => {
           url={cert.url}
           title={cert.title}
           subtitle={cert.subtitle}
-  iframeURL={cert.iframe}
+          iframeURL={cert.iframe}
           tenure={cert.tenure}
           image={cert.logoImg}
         >
