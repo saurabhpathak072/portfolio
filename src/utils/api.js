@@ -11,6 +11,6 @@ export const fetchUser=async (userid)=>{
         return null;
     } catch (error) {
         console.log(error);
-        alert("Error")
+        alert(error.response.data.error.msg)
     }
 } 

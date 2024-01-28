@@ -17,7 +17,7 @@ import { AppContext } from "../Context/Context";
 import { fetchUser } from "../utils/api";
 import { getUserData } from "../Components/App/Home/reducer/homeSlice";
 
-import {useParams} from 'react-router-dom'
+import {useParams, useNavigate} from 'react-router-dom'
 
 const Main = () => {
   const { isDesktop } = useContext(AppContext);
@@ -25,20 +25,29 @@ const Main = () => {
   const user = useSelector((state) => state.home.user);
   const {userid} = useParams();
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   console.log('userid',userid);
   useEffect(() => {
     const fetchData = async () => {
       if(userid){
+        try {
+          const { data } = await fetchUser(userid).catch((err)=>{
+            console.log(err);
+          });
+          dispatch(getUserData(data.data.user));
+        } catch (error) {
+          console.log(error);
+          navigate('/')
+        }
 
-        const { data } = await fetchUser(userid);
-        dispatch(getUserData(data.data.user));
+        
       }
     };
   
 
       fetchData();
     
-  }, [dispatch, userid]);
+  }, [dispatch, navigate, userid]);
 
   useEffect(() => {
     if (!user) {
