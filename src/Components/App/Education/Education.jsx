@@ -13,7 +13,7 @@ const Education = () => {
             Education
         </PageTitle>
         <div>
-        <Timeline data={data.educationData}/>
+        <Timeline data={data.education}/>
         </div>
     </div>
   )
