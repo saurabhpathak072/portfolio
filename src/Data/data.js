@@ -38,9 +38,10 @@ export const experienceData = [
       "JavaScript Libraries",
       "Mongo DB"
     ],
-    description:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nihil ab ex nisi accusantium doloremque, voluptatibus dolor",
-  },
+    // description:
+    //   " Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nihil ab ex nisi accusantium doloremque, voluptatibus dolor",
+  
+    },
   {
     logoImg: a5eLogo,
     title: "A5E Consulting",
