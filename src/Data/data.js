@@ -36,6 +36,7 @@ export const experienceData = [
       " React.js",
       "JavaScript",
       "JavaScript Libraries",
+      "Mongo DB"
     ],
     description:
       " Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nihil ab ex nisi accusantium doloremque, voluptatibus dolor",
@@ -55,6 +56,7 @@ export const experienceData = [
       "Git",
       "JavaScript ",
       "jQuery",
+      "Mongo DB",
       "Cascading Style Sheets (CSS)",
     ],
     description:
@@ -75,6 +77,7 @@ export const experienceData = [
       "Git",
       "SASS",
       "Bootstrap",
+      "Mongo DB"
     ],
     description:
       "Worked in Polymer Framework. Worked on the dashboard. Make a interactive web design. worked in the front-end part.",
@@ -107,6 +110,7 @@ export const educationData = [
       "· HTML5",
       "· SASS ",
       "· Bootstrap",
+      "Mongo DB"
     ],
     description: `Create various applications and work on various projects under the guidance of mentors.
     Learn various web development tools and libraries.
