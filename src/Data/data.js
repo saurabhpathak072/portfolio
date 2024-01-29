@@ -21,6 +21,7 @@ import sassLogo from "../Assets/Images/Skills/sasslogo.png";
 import bootstraplogo from "../Assets/Images/Skills/bootstraplogo.jpeg";
 import aspnetlogo from "../Assets/Images/Skills/aspNetLogo.jpg";
 import devexpress from "../Assets/Images/Skills/devexpressLogo.png";
+import apollo from "../Assets/Images/Skills/apollo.png";
 
 import homeLogo from "../Assets/Images/coder1.jpg"
 
@@ -160,6 +161,10 @@ export const skillsSet = [
   {
     image: graphQLLogo,
     title: "GraphQL",
+  },
+  {
+    image: apollo,
+    title: "Apollo",
   },
   {
     image: cordova,
