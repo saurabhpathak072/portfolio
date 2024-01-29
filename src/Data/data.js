@@ -257,7 +257,7 @@ GitHub Code Link:https://github.com/saurabhpathak072/financial-portfolio`
     title: "Employee Payroll System",
     subtitle:"Associated with LitsBros Pvt Ltd",
    
-    skills: ["Redux.js", "React JS", "Node JS"],
+    skills: ["Redux.js", "React JS", "Node JS", "Mongo DB"],
     tenure: "Apr 2020 - May 2020",
     description:`
     Develop an Employee Payroll Software where Employee can send their photo through camera and location to the admin and HR, Admin can view Employee Location on Map. Technology used in this project are ASP.NET , Android, Web-Services.`
