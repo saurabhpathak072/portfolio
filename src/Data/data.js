@@ -99,7 +99,7 @@ export const educationData = [
   {
     logoImg: greyAtomLogo,
     title: "GreyAtom",
-    subtitle: "GrayAtom Fornt-End Developer Program",
+    subtitle: "GrayAtom Web Developer Program",
     tenure: "2019 - 2020",
     skills: [
       "React.js ",
