@@ -383,7 +383,7 @@ export const userData ={
   full-stack developer.`,
   description2:` I have graduated as a Bachelor of Information Technology from
   SGGSIE&T, Nanded, Maharashtra. My strength lies in web development,
-  React JS, React-Native, javascript, jQuery, and bootstrap.`,
+  React JS, Node JS, Mongo DB, React-Native, javascript, jQuery, and bootstrap.`,
   description3:`The crossover between design and programming has always been an
   interesting topic. I am always trying to learn new technologies and
   explore them.`,
