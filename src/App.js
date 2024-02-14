@@ -22,7 +22,7 @@ function App() {
         <Routes>
        
           <Route path="/:userid" element={<Main user={user} />} />
-          <Route path="/" element={<Notfound/>} />
+          <Route index element={<Notfound/>} />
        
         </Routes>
       </main>
