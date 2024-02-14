@@ -1,12 +1,10 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap';
 // import { otherWorkList } from '../../../../Data/data';
 import SkillCards from '../../../UI/Cards/SkillCards';
 import styles from './OtherWorkCard.module.css';
-import { AppContext } from '../../../../Context/Context';
 
 const OtherWorkCard = ({otherWorkList}) => {
-  const {data} = useContext(AppContext)
     const project = otherWorkList.map((prj, index) => {
         return (
           <Col className={`py-2 my-2 ${styles.ProjectCard}`} key={index} lg={6}>

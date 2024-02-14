@@ -1,14 +1,11 @@
-import React, { useContext } from "react";
+import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import PageTitle from "../../UI/PageTitle/PageTitle";
 import styles from "./Contact.module.css";
 import ContactMap from "./Map/ContactMap";
 import {Icon} from '../../UI/Icon/Icon'
-import { AppContext } from "../../../Context/Context";
 
 const Contact = ({user}) => {
-  // const {data} = useContext(AppContext);
-  // const {user} = data
   return (
     <div className={styles.container}>
       <PageTitle size={"h2"} className={"p-2"}>
