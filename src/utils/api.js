@@ -4,7 +4,7 @@ export const fetchUser=async (userid)=>{
     try {
         if(userid){
 
-            const {data} =await Axios.get(`/user/${userid}`);
+            const {data} =await Axios.get(`https://saurabh-pathak-profile-api.onrender.com/user/${userid}`);
             return {data};
         }
         return null;
