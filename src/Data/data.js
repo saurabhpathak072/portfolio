@@ -382,3 +382,13 @@ export const userData ={
   email2:"saurabhspathak072@gmail.com",
   otherUrl:"https://saurabhpathak072-f8a1f.web.app/"
 }
+
+export const feedbackData=[
+  {
+    title: "Amit Sawarkar",
+    profileImg: "https://media.licdn.com/dms/image/C4E03AQFRZbQ8BeI55A/profile-displayphoto-shrink_400_400/0/1516674111197?e=1712188800&v=beta&t=tcdAgd57pA1iCw6BGfDvt9sii860K57oj4uEIfvfym4",
+    tenure: "May 6, 2020, Amit managed Saurabh directly",
+    subtitle:"C.E.O & HR at LitsBros Pvt. Ltd.(Laksh IT Solution) || entrepreneur || Motivational Speaker ||",
+    description:"Saurabh’s ability to handle multiple projects was unlike any I’ve seen before and made a dramatic increase in the productivity level of our company. I was impressed by Saurabh’s ability to deal with even the toughest clients – effortlessly. That skill often takes years to develop among consulting professionals, but it seemed to come perfectly naturally to him. No matter how tense a meeting, Saurabh made sure everyone left with a smile.",
+  }
+]
