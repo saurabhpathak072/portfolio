@@ -22,6 +22,8 @@ import bootstraplogo from "../Assets/Images/Skills/bootstraplogo.jpeg";
 import aspnetlogo from "../Assets/Images/Skills/aspNetLogo.jpg";
 import devexpress from "../Assets/Images/Skills/devexpressLogo.png";
 
+import homeLogo from "../Assets/Images/coder1.jpg"
+
 export const experienceData = [
   {
     logoImg: lntlogo,
@@ -257,6 +259,44 @@ GitHub Code Link:https://github.com/saurabhpathak072/financial-portfolio`
   },
 ];
 
+export const otherWorkList =[
+  {
+    // logoImg: lntlogo,
+    title: "Meal App (React-Native App)",
+    url: "https://github.com/saurabhpathak072/Native_feature-Favorite-Place-App",
+    tenure: "Dec 2023 - Jan 2024",
+    skills: ["Redux.js", "React Native", "Node JS"],
+  },
+  {
+    // logoImg: lntlogo,
+    title: "Favorite Place App (React-Native App)",
+    url: "https://github.com/saurabhpathak072/Native_feature-Favorite-Place-App",
+    tenure: "Dec 2023 - Jan 2024",
+    skills: ["Redux.js", "React Native", "Node JS"],
+  },
+  {
+    // logoImg: lntlogo,
+    title: "Meal App (React-Native App)",
+    url: "https://github.com/saurabhpathak072/MealApp",
+    tenure: "Dec 2023 - Jan 2024",
+    skills: ["Redux.js", "React Native", "Node JS"],
+  },
+  {
+    // logoImg: lntlogo,
+    title: "Student Registration ",
+    url: "https://github.com/saurabhpathak072/graphql-crash-course",
+    tenure: "Dec 2023 - Jan 2024",
+    skills: ["Redux.js", "React Native", "Node JS", "Mongo DB", "Express JS", "Gra[h QL"],
+  },
+  {
+    // logoImg: lntlogo,
+    title: "Java",
+    url: "https://github.com/saurabhpathak072/Java",
+    tenure: "Dec 2023 - Jan 2024",
+    skills: ["Java"],
+  },
+]
+
 export const certificateList =[
   {
     // logoImg: lntlogo,
@@ -319,3 +359,26 @@ export const certificateList =[
     
     },
 ]
+
+export const userData ={
+  name:"Saurabh Pathak",
+  mob:"7840937715",
+  currLoc:"Pune, India",
+  homeLogo:homeLogo,
+  email:"saurabhpathak072@gmail.com",
+  oldProfile:"https://saurabhpathak072-f8a1f.web.app/",
+  description1:`I have 4 years of experience with frontend and various web
+  technologies, always ready to learn something new and try to explore
+  more. I am gaining knowledge on the backend in Node js to become a
+  full-stack developer.`,
+  description2:` I have graduated as a Bachelor of Information Technology from
+  SGGSIE&T, Nanded, Maharashtra. My strength lies in web development,
+  React JS, React-Native, javascript, jQuery, and bootstrap.`,
+  description3:`The crossover between design and programming has always been an
+  interesting topic. I am always trying to learn new technologies and
+  explore them.`,
+  linkdin:"https://www.linkedin.com/in/saurabh-pathak-35b2b0190/",
+  github:"https://github.com/saurabhpathak072",
+  email2:"saurabhspathak072@gmail.com",
+  otherUrl:"https://saurabhpathak072-f8a1f.web.app/"
+}

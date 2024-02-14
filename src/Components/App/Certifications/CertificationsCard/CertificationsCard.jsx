@@ -1,11 +1,11 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { certificateList } from "../../../../Data/data";
+// import { certificateList } from "../../../../Data/data";
 import SkillCards from "../../../UI/Cards/SkillCards";
 // import styles from "./CertificationsCard.module.css";
 
-const CertificationsCard = () => {
-  const certificationList = certificateList.map((cert,index)=>{
+const CertificationsCard = ({data}) => {
+  const certificationList = data.map((cert,index)=>{
     return (
       <Col className={`py-2 my-2 `} key={index} md={6} lg={6}>
   

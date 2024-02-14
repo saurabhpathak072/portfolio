@@ -1,10 +1,12 @@
 import React from "react";
-import { Button, Col, Container, Row } from "react-bootstrap";
-import { projectList } from "../../../../Data/data";
+import {  Col, Container, Row } from "react-bootstrap";
+// import { projectList } from "../../../../Data/data";
 import SkillCards from "../../../UI/Cards/SkillCards";
 import styles from "./ProjectCard.module.css";
 
-const ProjectCard = () => {
+
+const ProjectCard = ({projectList}) => {
+
   const project = projectList.map((prj, index) => {
     return (
       <Col className={`py-2 my-2 ${styles.ProjectCard}`} key={index} lg={6}>

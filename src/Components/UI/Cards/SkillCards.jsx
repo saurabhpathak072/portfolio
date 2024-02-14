@@ -38,7 +38,7 @@ const SkillCards = ({
     footer = (
       <ul className="d-flex justify-content-around flex-wrap">
         {skills.map((sk, index) => {
-          return <li key={index}>{sk}</li>;
+          return <li key={index}>{sk.title}</li>;
         })}
       </ul>
     );
@@ -54,7 +54,7 @@ const SkillCards = ({
               <CardImg className={styles.cardImage} src={image} />
             </div>
           )}
-          <div className={description && styles.description}>
+          <div className={`${description && styles.description} ${styles.width}`}>
             <CardTitle>{title} </CardTitle>
             {subtitle && (
               <CardSubtitle className="my-1 py-1">{subtitle}</CardSubtitle>
@@ -68,7 +68,7 @@ const SkillCards = ({
             )}
             {url && (
               <div className={styles.Buttoncontainer}>
-                <Button variant="outline" onClick={handleClick} className={styles.btn}>
+                <Button variant="outline" onClick={handleClick} className={`${styles.width} ${styles.btn}`}>
                   {url} <Icon iconName={"Link"} />
                 </Button>
               </div>
