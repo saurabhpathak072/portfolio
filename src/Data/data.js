@@ -390,7 +390,7 @@ export const userData ={
   linkdin:"https://www.linkedin.com/in/saurabh-pathak-35b2b0190/",
   github:"https://github.com/saurabhpathak072",
   email2:"saurabhspathak072@gmail.com",
-  otherUrl:"https://saurabhpathak072-f8a1f.web.app/"
+  downloadResumeURL: "https://saurabh-pathak-profile-api.onrender.com/home/resume",
 }
 
 export const feedbackData=[

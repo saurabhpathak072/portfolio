@@ -7,7 +7,10 @@ import { Container, Row, Col, Image, Button } from "react-bootstrap";
 import { AppContext } from "../../../Context/Context";
 
 const Home = () => {
-  const {data} = useContext(AppContext)
+  const {data} = useContext(AppContext);
+  const downloadResumeHandler = () => {
+    window.open(data.user.downloadResumeURL, "_blank");
+  };
   return (
     <Container className={styles.Home}>
       <Row>
@@ -26,9 +29,17 @@ const Home = () => {
             <a className={styles.mail} href={data.user.oldProfile} target={'_blank'} rel="noreferrer"> {data.user.oldProfile}</a>
            
           </p>}
-          <div className="mt-5 ">
-            <Button className={styles.primaryButton} variant="outline" >Download Resume</Button>
-          </div>
+          {data.user?.downloadResumeURL && (
+            <div className="mt-5 ">
+              <Button
+                className={styles.primaryButton}
+                variant="outline"
+                onClick={downloadResumeHandler}
+              >
+                Download Resume
+              </Button>
+            </div>
+          )}
         </Col>
         <Col xs={12} lg={6} md={6}>
           <Image className={styles.image} src={data.user.homeLogo} alt="Coder Image 1" />
