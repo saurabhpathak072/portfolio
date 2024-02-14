@@ -1,11 +1,10 @@
 import Axios from 'axios'
 
-
 export const fetchUser=async (userid)=>{
     try {
         if(userid){
 
-            const {data} =await Axios.get(`http://localhost:4000/user/${userid}`);
+            const {data} =await Axios.get(`/user/${userid}`);
             return {data};
         }
         return null;

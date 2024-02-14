@@ -29,9 +29,10 @@ const Main = () => {
   console.log('userid',userid);
   useEffect(() => {
     const fetchData = async () => {
-      if(userid){
+      const user = userid || 'saurabh-pathak';
+      if(user){
         try {
-          const { data } = await fetchUser(userid).catch((err)=>{
+          const { data } = await fetchUser(user).catch((err)=>{
             console.log(err);
           });
           dispatch(getUserData(data.data.user));
