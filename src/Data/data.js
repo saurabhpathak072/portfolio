@@ -376,7 +376,6 @@ export const userData ={
   currLoc:"Pune, India",
   homeLogo:homeLogo,
   email:"saurabhpathak072@gmail.com",
-  oldProfile:"https://saurabhpathak072-f8a1f.web.app/",
   description1:`I have 4 years of experience with frontend and various web
   technologies, always ready to learn something new and try to explore
   more. I am gaining knowledge on the backend in Node js to become a
