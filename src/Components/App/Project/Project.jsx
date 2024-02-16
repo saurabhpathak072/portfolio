@@ -8,7 +8,7 @@ const Project = () => {
   return (
     <div className={styles.container}>
       <PageTitle size={"h2"} className={"p-2"}>
-        Prjects
+        Projects
       </PageTitle>
       <div>
         <Container>

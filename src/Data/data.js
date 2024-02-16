@@ -23,7 +23,7 @@ import aspnetlogo from "../Assets/Images/Skills/aspNetLogo.jpg";
 import devexpress from "../Assets/Images/Skills/devexpressLogo.png";
 import apollo from "../Assets/Images/Skills/apollo.png";
 
-import homeLogo from "../Assets/Images/coder1.jpg"
+import homeLogo from "../Assets/Images/coder1.jpg";
 
 export const experienceData = [
   {
@@ -37,12 +37,11 @@ export const experienceData = [
       " React.js",
       "JavaScript",
       "JavaScript Libraries",
-      "Mongo DB"
+      "Mongo DB",
     ],
     // description:
     //   " Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nihil ab ex nisi accusantium doloremque, voluptatibus dolor",
-  
-    },
+  },
   {
     logoImg: a5eLogo,
     title: "A5E Consulting",
@@ -79,7 +78,7 @@ export const experienceData = [
       "Git",
       "SASS",
       "Bootstrap",
-      "Mongo DB"
+      "Mongo DB",
     ],
     description:
       "Worked in Polymer Framework. Worked on the dashboard. Make a interactive web design. worked in the front-end part.",
@@ -112,7 +111,7 @@ export const educationData = [
       "· HTML5",
       "· SASS ",
       "· Bootstrap",
-      "Mongo DB"
+      "Mongo DB",
     ],
     description: `Create various applications and work on various projects under the guidance of mentors.
     Learn various web development tools and libraries.
@@ -204,7 +203,7 @@ export const projectList = [
     tenure: "Jan 2022 - Jan 2022",
     skills: ["Redux.js", "React JS", "Node JS", "Socket.io", "Chakra UI"],
     description:
-      "Chat Application for creating chat with friends. Register the user, Login yourself and start your experience.",
+      "Chat application for creating chat with friends. Register the user, Login yourself and start your experience.",
   },
   {
     // logoImg: lntlogo,
@@ -213,7 +212,7 @@ export const projectList = [
     skills: ["Redux.js", "React JS", "Node JS"],
     tenure: "Jan 2022 - Jan 2022",
     description:
-      "Create an clone webpage of popula website Airbnb using ReactJS.",
+      "Create an clone webpage of popular website Airbnb using ReactJS.",
   },
   {
     // logoImg: lntlogo,
@@ -231,9 +230,8 @@ export const projectList = [
     url: "https://build-whatsapp-clone.web.app/",
     skills: ["Redux.js", "React JS", "Node JS"],
     tenure: "Sep 2020 - Sep 2020",
-    description:
-      `Create a WhatsApp web application in react.
-      used to share the message across the room
+    description: `Create a WhatsApp web application in react Js.
+      It is used to share the message across the room.
       Technology used React,MongoDB,Firebase`,
   },
   {
@@ -251,25 +249,25 @@ export const projectList = [
     url: "https://finanial-portfolio.web.app/",
     skills: ["Redux.js", "React JS", "Node JS"],
     tenure: "Apr 2020 - May 2020",
-    description:`
-    This Application is used to track the stocks prices, Buy stocks and calculate Profit/Loss
-Future scope for this application is adding chart/graph to show previous prices of that stocks
+    description: `
+    This application is used to track the stocks prices, Buy stocks and calculate profit/loss
+future scope for this application is adding chart/graph to show previous prices of that stocks.
 Technology used: React JS, Axios, Bootstrap, Firebase
-GitHub Code Link:https://github.com/saurabhpathak072/financial-portfolio`
+GitHub Code Link:https://github.com/saurabhpathak072/financial-portfolio`,
   },
   {
     // logoImg: lntlogo,
     title: "Employee Payroll System",
-    subtitle:"Associated with LitsBros Pvt Ltd",
-   
+    subtitle: "Associated with LitsBros Pvt Ltd",
+
     skills: ["Redux.js", "React JS", "Node JS", "Mongo DB"],
     tenure: "Apr 2020 - May 2020",
-    description:`
-    Develop an Employee Payroll Software where Employee can send their photo through camera and location to the admin and HR, Admin can view Employee Location on Map. Technology used in this project are ASP.NET , Android, Web-Services.`
+    description: `
+    Develop an employee payroll software where employee can send their photo through camera and location to the admin and HR, Admin can view employee location on map. Technology used in this project are ASP.NET , Android, Web-Services.`,
   },
 ];
 
-export const otherWorkList =[
+export const otherWorkList = [
   {
     // logoImg: lntlogo,
     title: "Meal App (React-Native App)",
@@ -296,7 +294,14 @@ export const otherWorkList =[
     title: "Student Registration ",
     url: "https://github.com/saurabhpathak072/graphql-crash-course",
     tenure: "Dec 2023 - Jan 2024",
-    skills: ["Redux.js", "React Native", "Node JS", "Mongo DB", "Express JS", "Gra[h QL"],
+    skills: [
+      "Redux.js",
+      "React Native",
+      "Node JS",
+      "Mongo DB",
+      "Express JS",
+      "Gra[h QL",
+    ],
   },
   {
     // logoImg: lntlogo,
@@ -305,99 +310,94 @@ export const otherWorkList =[
     tenure: "Dec 2023 - Jan 2024",
     skills: ["Java"],
   },
-]
+];
 
-export const certificateList =[
+export const certificateList = [
   {
     // logoImg: lntlogo,
     title: "React Native",
     url: "https://www.udemy.com/certificate/UC-aa6c4a6c-77fb-459a-b1ac-5f47c60e5f4c/",
     tenure: "Issued on Jan 2024",
-    subtitle:"Udemy",
-    description:"Credential ID UC-aa6c4a6c-77fb-459a-b1ac-5f47c60e5f4c",
+    subtitle: "Udemy",
+    description: "Credential ID UC-aa6c4a6c-77fb-459a-b1ac-5f47c60e5f4c",
     // skills:["React.js ","· React Native"]
-    },
+  },
   {
     // logoImg: lntlogo,
-    title: "Front-End Web UI Frameworks and Toolse",
+    title: "Front-End Web UI Frameworks and Tools",
     url: "https://coursera.org/share/c0e2913a3757db0560910b7358029996",
     tenure: "Issued on March 2022",
-    subtitle:"Coursera",
-    description:"Credential ID c0e2913a3757db0560910b7358029996",
-    },
+    subtitle: "Coursera",
+    description: "Credential ID c0e2913a3757db0560910b7358029996",
+  },
   {
     // logoImg: lntlogo,
     title: "React basic",
     url: "https://www.hackerrank.com/certificates/09e711e424c3",
     tenure: "Issued on Feb 2022",
-    subtitle:"HackerRank",
-    description:"Credential ID 09e711e424c3",
-    },
+    subtitle: "HackerRank",
+    description: "Credential ID 09e711e424c3",
+  },
   {
     // logoImg: lntlogo,
     title: "Java basic",
     url: "https://www.hackerrank.com/certificates/533cbd8635f5",
     tenure: "Issued on Sep 2020",
-    subtitle:"HackerRank",
-    description:"Credential ID 533cbd8635f5",
-    },
+    subtitle: "HackerRank",
+    description: "Credential ID 533cbd8635f5",
+  },
   {
     // logoImg: lntlogo,
     title: "Java (Intermediate) Certificate",
     url: "https://www.hackerrank.com/certificates/cdf3222c7904",
     tenure: "Issued on Sep 2020",
-    subtitle:"HackerRank",
-    description:"Credential ID cdf3222c7904",
+    subtitle: "HackerRank",
+    description: "Credential ID cdf3222c7904",
     // iframe:"https://www.hackerrank.com/certificates/iframe/533cbd8635f5"
-    },
+  },
   {
     // logoImg: lntlogo,
     title: "MongoDB Basics",
     url: "https://university.mongodb.com/course_completion/f657acd4-b034-4607-940e-856e21cdcc08",
     tenure: "Issued on Jan 2020",
-    subtitle:"MongoDB University",
-    description:"Credential ID f657acd4-b034-4607-940e-856e21cdcc08",
-    
-    },
+    subtitle: "MongoDB University",
+    description: "Credential ID f657acd4-b034-4607-940e-856e21cdcc08",
+  },
   {
     // logoImg: lntlogo,
     title: "Asp.Net MVC",
     // url: "https://university.mongodb.com/course_completion/f657acd4-b034-4607-940e-856e21cdcc08",
     tenure: "Issued Dec 2019",
-    subtitle:"Naresh i Technologies",
+    subtitle: "Naresh i Technologies",
     // description:"Credential ID f657acd4-b034-4607-940e-856e21cdcc08",
-    
-    },
-]
+  },
+];
 
-export const userData ={
-  name:"Saurabh Pathak",
-  mob:"7840937715",
-  currLoc:"Pune, India",
-  homeLogo:homeLogo,
-  email:"saurabhpathak072@gmail.com",
-  description1:`I have 4 years of experience with frontend and various web
-  technologies, always ready to learn something new and try to explore
-  more. I am gaining knowledge on the backend in Node js to become a
-  full-stack developer.`,
-  description2:` I have graduated as a Bachelor of Information Technology from
-  SGGSIE&T, Nanded, Maharashtra. My strength lies in web development,
-  React JS, Node JS, Mongo DB, React-Native, javascript, jQuery, and bootstrap.`,
-  description3:`The crossover between design and programming has always been an
-  interesting topic. I am always trying to learn new technologies and
-  explore them.`,
-  linkdin:"https://www.linkedin.com/in/saurabh-pathak-35b2b0190/",
-  github:"https://github.com/saurabhpathak072",
-  email2:"saurabhspathak072@gmail.com",
-  downloadResumeURL: "https://saurabh-pathak-profile-api.onrender.com/home/resume",
-}
+export const userData = {
+  name: "Saurabh Pathak",
+  mob: "7840937715",
+  currLoc: "Pune, India",
+  homeLogo: homeLogo,
+  email: "saurabhpathak072@gmail.com",
+  description1: `I have 4 years of experience with frontend and various web technologies and am always ready to learn something new and try to explore more. I am gaining knowledge on the backend of Node.js to become a full-stack developer`,
+  description2: ` I have graduated with a Bachelor of Information Technology from SGGSIE&T, Nanded, Maharashtra. My strengths lie in web development, React JS, Node JS, Mongo DB, React-Native, javascript, jQuery, and bootstrap.`,
+  description3: `The crossover between design and programming has always been an interesting topic. I am always trying to learn new technologies and explore them.`,
+  linkdin: "https://www.linkedin.com/in/saurabh-pathak-35b2b0190/",
+  github: "https://github.com/saurabhpathak072",
+  email2: "saurabhspathak072@gmail.com",
+  downloadResumeURL:
+    "https://saurabh-pathak-profile-api.onrender.com/home/resume",
+};
 
-export const feedbackData=[
+export const feedbackData = [
   {
     title: "Amit Sawarkar",
-    profileImg: "https://media.licdn.com/dms/image/C4E03AQFRZbQ8BeI55A/profile-displayphoto-shrink_400_400/0/1516674111197?e=1712188800&v=beta&t=tcdAgd57pA1iCw6BGfDvt9sii860K57oj4uEIfvfym4",
+    profileImg:
+      "https://media.licdn.com/dms/image/C4E03AQFRZbQ8BeI55A/profile-displayphoto-shrink_400_400/0/1516674111197?e=1712188800&v=beta&t=tcdAgd57pA1iCw6BGfDvt9sii860K57oj4uEIfvfym4",
     tenure: "May 6, 2020, Amit managed Saurabh directly",
-    subtitle:"C.E.O & HR at LitsBros Pvt. Ltd.(Laksh IT Solution) || entrepreneur || Motivational Speaker ||",
-    description:"Saurabh’s ability to handle multiple projects was unlike any I’ve seen before and made a dramatic increase in the productivity level of our company. I was impressed by Saurabh’s ability to deal with even the toughest clients – effortlessly. That skill often takes years to develop among consulting professionals, but it seemed to come perfectly naturally to him. No matter how tense a meeting, Saurabh made sure everyone left with a smile.",
-  }
-]
+    subtitle:
+      "C.E.O & HR at LitsBros Pvt. Ltd.(Laksh IT Solution) || entrepreneur || Motivational Speaker ||",
+    description:
+      "Saurabh’s ability to handle multiple projects was unlike any I’ve seen before and made a dramatic increase in the productivity level of our company. I was impressed by Saurabh’s ability to deal with even the toughest clients – effortlessly. That skill often takes years to develop among consulting professionals, but it seemed to come perfectly naturally to him. No matter how tense a meeting, Saurabh made sure everyone left with a smile.",
+  },
+];
